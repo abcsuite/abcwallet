@@ -1,0 +1,123 @@
+hash: 8821a10afa7fa0a739161963d37154c7ed31841dc915a29978f2d27885acffbc
+updated: 2017-06-20T11:36:44.3520942-04:00
+imports:
+- name: github.com/agl/ed25519
+  version: 278e1ec8e8a6e017cd07577924d6766039146ced
+  subpackages:
+  - edwards25519
+- name: github.com/boltdb/bolt
+  version: 583e8937c61f1af6513608ccc75c97b6abdf4ff9
+- name: github.com/btcsuite/btclog
+  version: 266a29b6e5ad061d4c055cec1c0049e4aae47092
+- name: github.com/btcsuite/go-socks
+  version: 4720035b7bfd2a9bb130b1c184f8bbe41b6f0d0f
+  subpackages:
+  - socks
+- name: github.com/btcsuite/websocket
+  version: 31079b6807923eb23992c421b114992b95131b55
+- name: github.com/abcsuite/bitset
+  version: 484b833245d5f9046e2893a6bd2e54b1df3a53a4
+- name: github.com/abcsuite/blake256
+  version: a840e32d7c31fe2e0218607334cb120a683951a4
+- name: github.com/abcsuite/abcd
+  version: ce4b77d3d9e3a4d3393e1fa3baeee5679cad518d
+  subpackages:
+  - blockchain
+  - blockchain/internal/dbnamespace
+  - blockchain/internal/progresslog
+  - blockchain/stake
+  - blockchain/stake/internal/dbnamespace
+  - blockchain/stake/internal/ticketdb
+  - blockchain/stake/internal/tickettreap
+  - chaincfg
+  - chaincfg/chainec
+  - chaincfg/chainhash
+  - database
+  - dcrec/edwards
+  - dcrec/secp256k1
+  - dcrec/secp256k1/schnorr
+  - abcjson
+  - txscript
+  - wire
+- name: github.com/abcsuite/abcrpcclient
+  version: e7732bfa71b4b098494fa0ce62d42fded970c393
+- name: github.com/abcsuite/abcutil
+  version: a5fab53cab39b793142c8453caa4c6f83bc152d4
+  subpackages:
+  - base58
+  - hdkeychain
+- name: github.com/golang/protobuf
+  version: 5a0f697c9ed9d68fef0116532c6e05cfeae00e55
+  subpackages:
+  - proto
+  - ptypes/any
+- name: github.com/jessevdk/go-flags
+  version: 48cf8722c3375517aba351d1f7577c40663a4407
+- name: github.com/jrick/logrotate
+  version: 4ed05ed86ef17d10ff99cce77481e0fcf6f2c7b0
+  subpackages:
+  - rotator
+- name: golang.org/x/crypto
+  version: e7ba82683099cae71475961448ab8f903ea77c26
+  subpackages:
+  - nacl/secretbox
+  - pbkdf2
+  - poly1305
+  - ripemd160
+  - salsa20/salsa
+  - scrypt
+  - ssh/terminal
+- name: golang.org/x/net
+  version: 59a0b19b5533c7977ddeb86b017bf507ed407b12
+  subpackages:
+  - context
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - trace
+- name: golang.org/x/sys
+  version: 0b25a408a50076fbbcae6b7ac0ea5fbb0b085e79
+  subpackages:
+  - unix
+- name: golang.org/x/text
+  version: eae24e7440a7aee8476ea69a0c574eafb42f5839
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/genproto
+  version: aa2eb687b4d3e17154372564ad8d6bf11c3cf21f
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: d8960bd63c6743defa6d54926e5edfa8e4a28e43
+  subpackages:
+  - codes
+  - credentials
+  - grpclb/grpc_lb_v1
+  - grpclog
+  - internal
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - stats
+  - status
+  - tap
+  - transport
+testImports:
+- name: github.com/davecgh/go-spew
+  version: 346938d642f2ec3594ed81d874461961cd0faa76
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: f6abca593680b2315d2075e0f5e2a9751e3f431a
+  subpackages:
+  - assert
