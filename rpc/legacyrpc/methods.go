@@ -708,7 +708,7 @@ func getBlockCount(icmd interface{}, w *wallet.Wallet) (interface{}, error) {
 }
 
 // getInfo handles a getinfo request by returning the a structure containing
-// information about the current state of dcrcwallet.
+// information about the current state of abcwallet.
 // exist.
 func getInfo(icmd interface{}, w *wallet.Wallet, chainClient *chain.RPCClient) (interface{}, error) {
 	// Call down to abcd for all of the information in this command known
@@ -3123,13 +3123,13 @@ func verifyMessage(icmd interface{}, w *wallet.Wallet) (interface{}, error) {
 	}
 
 	// Aero: This should actually be a universalized constructor.
-	pkDcr := chainec.Secp256k1.NewPublicKey(pk.GetX(), pk.GetY())
+	pkAbc := chainec.Secp256k1.NewPublicKey(pk.GetX(), pk.GetY())
 
 	var serializedPubKey []byte
 	if wasCompressed {
-		serializedPubKey = pkDcr.SerializeCompressed()
+		serializedPubKey = pkAbc.SerializeCompressed()
 	} else {
-		serializedPubKey = pkDcr.SerializeUncompressed()
+		serializedPubKey = pkAbc.SerializeUncompressed()
 	}
 	// Verify that the signed-by address matches the given address
 	switch checkAddr := addr.(type) {
@@ -3173,7 +3173,7 @@ func version(icmd interface{}, w *wallet.Wallet, chainClient *chain.RPCClient) (
 		resp = make(map[string]abcjson.VersionResult)
 	}
 
-	resp["dcrwalletjsonrpcapi"] = abcjson.VersionResult{
+	resp["abcwalletjsonrpcapi"] = abcjson.VersionResult{
 		VersionString: jsonrpcSemverString,
 		Major:         jsonrpcSemverMajor,
 		Minor:         jsonrpcSemverMinor,

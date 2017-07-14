@@ -36,7 +36,7 @@ var pubPass = []byte("public")
 func TestUpgrades(t *testing.T) {
 	t.Parallel()
 
-	d, err := ioutil.TempDir("", "dcrwallet_udb_TestUpgrades")
+	d, err := ioutil.TempDir("", "abcwallet_udb_TestUpgrades")
 	if err != nil {
 		t.Fatal(err)
 	}

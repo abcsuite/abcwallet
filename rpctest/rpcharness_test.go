@@ -862,7 +862,7 @@ func testListUnspent(r *Harness, t *testing.T) {
 	// then not in the UTXO list after send.
 	for txinID, amt := range txInIDs {
 		if _, ok := utxosBeforeSend[txinID]; !ok {
-			t.Fatalf("Failed to find txid %v (%v DCR) in list of UTXOs",
+			t.Fatalf("Failed to find txid %v (%v AER) in list of UTXOs",
 				txinID, amt)
 		}
 	}
@@ -885,7 +885,7 @@ func testListUnspent(r *Harness, t *testing.T) {
 		}
 		if amt, ok := txInIDs[outpointStr]; ok {
 			t.Fatalf("Found PreviousOutPoint of send still in UTXO set: %v, "+
-				"%v DCR", outpointStr, amt)
+				"%v AER", outpointStr, amt)
 		}
 	}
 }

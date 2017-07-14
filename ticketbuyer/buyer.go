@@ -714,14 +714,14 @@ func (t *TicketPurchaser) Purchase(height int64) (*PurchaseStats, error) {
 		// Amount of tickets that can be bought per block with current and redeemed funds
 		buyPerBlockAll := tixCanBuyAll / float64(blocksRemaining)
 
-		log.Debugf("Your average purchase price for tickets in the pool is %.2f DCR", yourAvgTixPrice)
-		log.Debugf("Available funds of %.2f DCR can buy %.2f tickets, %.2f tickets per block",
+		log.Debugf("Your average purchase price for tickets in the pool is %.2f AER", yourAvgTixPrice)
+		log.Debugf("Available funds of %.2f AER can buy %.2f tickets, %.2f tickets per block",
 			bal.Spendable.ToCoin()-balanceToMaintainAmt, tixCanBuy, buyPerBlock)
 		log.Debugf("With %.2f%% proportion live, you will redeem ~%.2f tickets in the remaining %d blocks",
 			proportionLive*100, tixWillRedeem, blocksRemaining)
-		log.Debugf("Redeemed ticket value expected is %.2f DCR, buys %.2f tickets, %.2f%% more",
+		log.Debugf("Redeemed ticket value expected is %.2f AER, buys %.2f tickets, %.2f%% more",
 			redeemedFunds, tixToBuyWithRedeemedFunds, tixToBuyWithRedeemedFunds/tixCanBuy*100)
-		log.Debugf("Stake reward expected is %.2f DCR, buys %.2f tickets, %.2f%% more",
+		log.Debugf("Stake reward expected is %.2f AER, buys %.2f tickets, %.2f%% more",
 			stakeRewardFunds, tixToBuyWithStakeRewardFunds, tixToBuyWithStakeRewardFunds/tixCanBuy*100)
 		log.Infof("Will buy ~%.2f tickets per block, %.2f ticket purchases remain this window", buyPerBlockAll, tixCanBuyAll)
 

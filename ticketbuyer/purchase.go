@@ -83,7 +83,7 @@ out:
 				}
 				// Purchase tickets for each attached block, not just for the
 				// update to the main chain.  This is probably not optimal but
-				// it matches how dcrticketbuyer worked.
+				// it matches how abcticketbuyer worked.
 				for h := v.NewHeight - int32(len(v.AttachedBlocks)) + 1; h <= v.NewHeight; h++ {
 					p.purchase(int64(h))
 				}

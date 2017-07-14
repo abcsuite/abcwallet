@@ -33,9 +33,9 @@ imports:
   - chaincfg/chainec
   - chaincfg/chainhash
   - database
-  - dcrec/edwards
-  - dcrec/secp256k1
-  - dcrec/secp256k1/schnorr
+  - abcec/edwards
+  - abcec/secp256k1
+  - abcec/secp256k1/schnorr
   - abcjson
   - txscript
   - wire
