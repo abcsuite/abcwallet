@@ -410,7 +410,7 @@ out:
 			// TODO: A minute timeout is used to prevent the handler loop from
 			// blocking here forever, but this is much larger than it needs to
 			// be due to abcd processing websocket requests synchronously (see
-			// https://github.com/btcsuite/btcd/issues/504).  Decrease this to
+			// https://github.com/abcsuite/abcd/issues/504).  Decrease this to
 			// something saner like 3s when the above issue is fixed.
 			type sessionResult struct {
 				err error

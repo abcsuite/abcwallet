@@ -20,7 +20,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/btcsuite/websocket"
+	"github.com/abcsuite/websocket"
 	"github.com/abcsuite/abcd/chaincfg"
 	"github.com/abcsuite/abcd/abcjson"
 	"github.com/abcsuite/abcwallet/chain"

@@ -1,8 +1,8 @@
 package: github.com/abcsuite/abcwallet
 import:
-- package: github.com/btcsuite/btclog
+- package: github.com/abcsuite/abclog
   version: master
-- package: github.com/btcsuite/websocket
+- package: github.com/abcsuite/websocket
   version: master
 - package: github.com/abcsuite/bitset
   version: master
